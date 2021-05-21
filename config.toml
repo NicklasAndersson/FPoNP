@@ -9,7 +9,7 @@ paginate = 5
 contentTypeName = "posts"
 
 # ["orange", "blue", "red", "green", "pink"]
-themeColor = "orange"
+themeColor = "blue"
 
 # if you set this to 0, only submenu trigger will be visible
 showMenuItems = 2
@@ -40,14 +40,14 @@ showLastUpdated = false
 # set Twitter handles for Twitter cards
 # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
 # do not include @
-creator = ""
-site = ""
+creator = "NLAndersson"
+site = "NLAndersson"
 
 [languages]
 [languages.en]
 languageName = "English"
-title = "Terminal"
-subtitle = "A simple, retro theme for Hugo"
+title = "First Party or No Party!"
+subtitle = "Ads and tracking should be served first party or not att all!"
 owner = ""
 keywords = ""
 copyright = ""
@@ -58,15 +58,15 @@ missingContentMessage = "Page not found..."
 missingBackButtonLabel = "Back to home page"
 
 [languages.en.params.logo]
-logoText = "Terminal"
+logoText = "FPoNP"
 logoHomeLink = "/"
 
-[languages.en.menu]
-[[languages.en.menu.main]]
-identifier = "about"
-name = "About"
-url = "/about"
-[[languages.en.menu.main]]
-identifier = "showcase"
-name = "Showcase"
-url = "/showcase"
+#[languages.en.menu]
+#[[languages.en.menu.main]]
+#identifier = "about"
+#name = "About"
+#url = "/about"
+#[[languages.en.menu.main]]
+#identifier = "showcase"
+#name = "Showcase"
+#url = "/showcase"
