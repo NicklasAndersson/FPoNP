@@ -8,4 +8,4 @@ There's also upsides
 for you to serving users from your domain, for example you don't have to worry about adblock destroying your metrics. You can also reduce load times and show ads even if adblock is used.
 
 ###
-Please feel free to improve this site by creating a [Pull Request](https://github.com/NicklasAndersson/FPoNP) 
+Please feel free to improve this site by creating a [Pull Request](https://github.com/NicklasAndersson/FPoNP) or Email me at nicklas@firstpartyornoparty.org
