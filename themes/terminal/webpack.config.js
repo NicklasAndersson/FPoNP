@@ -69,11 +69,6 @@ module.exports = (env, { mode }) => ({
           },
           {
             loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                config: path.resolve(__dirname, "postcss.config.js"),
-              },
-            },
           },
         ],
       },
@@ -94,7 +89,7 @@ module.exports = (env, { mode }) => ({
       new TerserPlugin({
         terserOptions: {
           compress: {
-            drop_console: false,
+            drop_console: mode === 'production',
           },
         },
       }),
