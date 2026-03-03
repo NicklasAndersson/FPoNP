@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://firstpartyornoparty.wwn.se/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
