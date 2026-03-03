@@ -17,4 +17,4 @@ By hosting resources on your own domain, you gain total control over caching, im
 This site has moved from `firstpartyornoparty.org` to [firstpartyornoparty.wwn.se](https://firstpartyornoparty.wwn.se/).
 
 ###
-Please feel free to improve this site by creating a [Pull Request](https://github.com/NicklasAndersson/FPoNP) or Email me at nicklas@firstpartyornoparty.org
+Please feel free to improve this site by creating a [Pull Request](https://github.com/NicklasAndersson/FPoNP) or opening a [GitHub Issue](https://github.com/NicklasAndersson/FPoNP/issues).

@@ -38,4 +38,4 @@ This repository hosts the "First Party or No Party" advocacy website at firstpar
 ## Contributing
 - Feel free to improve the site's message and content
 - Open issues or pull requests for contributions
-- Contact: nicklas@firstpartyornoparty.org
+- Contact: Open a [GitHub Issue](https://github.com/NicklasAndersson/FPoNP/issues)
