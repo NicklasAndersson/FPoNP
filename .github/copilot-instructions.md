@@ -1,7 +1,7 @@
 # Copilot Instructions
 
 ## Project Overview
-This repository hosts the "First Party or No Party" advocacy website at firstpartyornoparty.org, which promotes serving ads and tracking from first-party domains rather than third-party services. The site is built with Hugo and hosted on Cloudflare Pages, automatically deployed from the master branch.
+This repository hosts the "First Party or No Party" advocacy website at firstpartyornoparty.wwn.se (previously firstpartyornoparty.org), which promotes serving ads and tracking from first-party domains rather than third-party services. The site is built with Hugo and hosted on Cloudflare Pages, automatically deployed from the master branch.
 
 ## Tech Stack
 - **Static Site Generator**: Hugo
