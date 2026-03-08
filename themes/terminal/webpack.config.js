@@ -2,7 +2,7 @@ const Webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const path = require("path");
 
@@ -69,11 +69,6 @@ module.exports = (env, { mode }) => ({
           },
           {
             loader: "postcss-loader",
-            options: {
-              config: {
-                path: "postcss.config.js",
-              },
-            },
           },
         ],
       },
@@ -81,12 +76,22 @@ module.exports = (env, { mode }) => ({
   },
   optimization: {
     splitChunks: {
-      name: "vendor",
-      minChunks: 2,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all",
+          minChunks: 2,
+        },
+      },
     },
     minimizer: [
-      new UglifyJsPlugin({
-        sourceMap: true,
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: mode === 'production',
+          },
+        },
       }),
     ],
   },
