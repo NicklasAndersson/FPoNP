@@ -1,0 +1,23 @@
+name: Terminal theme dependency validation
+on:
+  pull_request:
+    paths:
+      - 'themes/terminal/package.json'
+      - 'themes/terminal/yarn.lock'
+      - '.github/workflows/terminal-theme-validation.yml'
+jobs:
+  terminal-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: themes/terminal
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: yarn
+          cache-dependency-path: themes/terminal/yarn.lock
+      - run: corepack enable
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
